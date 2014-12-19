@@ -1,0 +1,18 @@
+<?php
+class Controller$up1(${route1})$up1(${route2}) extends Controller {
+	private $error = array();
+
+	public function index() {
+		$data = $this->load->language('${route1}/${route2}');
+
+		$this->document->setTitle($this->language->get('heading_title'));
+		\$data['view_route'] = '${route1}/${route2}';
+		$this->load->model('${route1}/${route2}');
+		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/${route1}/${route2}.tpl')) {
+			$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/${route1}/${route2}.tpl', $data));
+		} else {
+			$this->response->setOutput($this->load->view('default/template/${route1}/${route2}.tpl', $data));
+		}
+	}
+
+}

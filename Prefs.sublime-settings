@@ -1,0 +1,16 @@
+{
+	"chains":{
+		"admin":{
+			"model":"admin/model",
+			"controller":"admin/controller",
+			"view":"admin/view/template",
+			"language":"admin/language",
+		},
+		"catalog":{
+			"model":"catalog/model",
+			"controller":"catalog/controller",
+			"view":"catalog/view/theme/default/template",
+			"language":"catalog/language",
+		}
+	}
+}

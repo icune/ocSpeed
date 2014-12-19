@@ -1,0 +1,10 @@
+<?php
+
+class Model$up1(${route1})$up1(${route2}) extends Model {
+	public function getAll() {
+		$sql = "SELECT * FROM ".DB_PREFIX."$nop(${route1})_${route2}";
+		$q = $this->db->query($sql);
+		return $q->rows;
+	}
+
+}
